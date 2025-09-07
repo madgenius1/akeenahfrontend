@@ -63,7 +63,7 @@ const slides: ISlide[] = [
 
 export default function Hero() {
     const [current, setCurrent] = useState(0);
-    const [direction, setDirection] = useState<1 | -1>(1); // 1 = right, -1 = left
+    const [direction, setDirection] = useState<1 | -1>(1); // 1 = next, -1 = prev
 
     const handleNext = useCallback(() => {
         setDirection(1);
@@ -80,60 +80,78 @@ export default function Hero() {
         return () => clearInterval(timer);
     }, [handleNext]);
 
+    // Slide variants
     const variants = {
         enter: (dir: number) => ({
-            x: dir > 0 ? 1000 : -1000,
-            opacity: 0,
+            x: dir > 0 ? '100%' : '-100%',
+            opacity: 1,
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
         }),
-        center: { x: 0, opacity: 1 },
+        center: {
+            x: 0,
+            opacity: 1,
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+        },
         exit: (dir: number) => ({
-            x: dir > 0 ? -1000 : 1000,
-            opacity: 0,
+            x: dir > 0 ? '-100%' : '100%',
+            opacity: 1,
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
         }),
     };
 
     return (
         <main className="relative min-h-screen w-full overflow-hidden font-sans" aria-live="polite">
-            <AnimatePresence custom={direction} mode="wait">
-                <motion.div
-                    key={slides[current].id}
-                    className="absolute inset-0"
-                    custom={direction}
-                    variants={variants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.8, ease: 'easeInOut' }}
-                >
-                    {/* Background */}
-                    <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: `url(${slides[current].bgUrl})` }}
-                    />
-                    <div className="absolute inset-0 bg-black/60" />
+            <div className="relative min-h-screen">
+                <AnimatePresence custom={direction} initial={false} mode="popLayout">
+                    <motion.div
+                        key={slides[current].id}
+                        className="absolute inset-0"
+                        custom={direction}
+                        variants={variants}
+                        initial="enter"
+                        animate="center"
+                        exit="exit"
+                        transition={{ duration: 0.8, ease: 'easeInOut' }}
+                    >
+                        {/* Background */}
+                        <div
+                            className="absolute inset-0 bg-cover bg-center"
+                            style={{ backgroundImage: `url(${slides[current].bgUrl})` }}
+                        />
+                        <div className="absolute inset-0 bg-black/60" />
 
-                    {/* Content */}
-                    <div className="relative z-10 flex min-h-screen items-center justify-start px-6 sm:px-10 lg:px-20">
-                        <div className="max-w-3xl text-white space-y-6">
-                            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase leading-tight">
-                                {slides[current].title}
-                            </h1>
-                            <p className="text-lg sm:text-xl lg:text-2xl font-medium">{slides[current].subtitle}</p>
-                            <div className="flex flex-wrap gap-4 pt-4">
-                                {slides[current].links.map((link, idx) => (
-                                    <Link
-                                        key={idx}
-                                        href={link.href}
-                                        className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-base sm:text-lg font-medium px-5 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-white/20"
-                                    >
-                                        {link.text}
-                                    </Link>
-                                ))}
+                        {/* Content */}
+                        <div className="relative z-10 flex min-h-screen items-center justify-start px-6 sm:px-10 lg:px-20">
+                            <div className="max-w-3xl text-white space-y-6">
+                                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase leading-tight">
+                                    {slides[current].title}
+                                </h1>
+                                <p className="text-lg sm:text-xl lg:text-2xl font-medium">{slides[current].subtitle}</p>
+                                <div className="flex flex-wrap gap-4 pt-4">
+                                    {slides[current].links.map((link, idx) => (
+                                        <Link
+                                            key={idx}
+                                            href={link.href}
+                                            className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-base sm:text-lg font-medium px-5 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-white/20"
+                                        >
+                                            {link.text}
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </motion.div>
-            </AnimatePresence>
+                    </motion.div>
+                </AnimatePresence>
+            </div>
 
             {/* Controls */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-6 z-20">

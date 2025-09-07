@@ -6,7 +6,7 @@ import { FaGlobeAfrica } from "react-icons/fa";
 
 export default function Navbar() {
     return (
-        <nav className="p-4 sticky top-0 z-50 shadow-md bg-transparent">
+        <nav className="p-4 sticky top-0 z-50 shadow-md bg-white">
             <div className="max-w-screen-2xl mx-auto">
                 <div className="flex items-center justify-between px-4">
                     <div className="flex justify-start">
@@ -20,7 +20,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                     <div className="hidden lg:items-center text-neutral-900 lg:flex md:flex sm:hidden">
-                        <ul className="list-none flex flex-row text-lg space-x-4">
+                        <ul className="list-none flex flex-row text-md space-x-4">
                             <li>
                                 <Link href="/products" className="font-semibold text-neutral-950 hover:text-red-700 uppercase">
                                     Products
