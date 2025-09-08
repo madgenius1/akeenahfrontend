@@ -66,7 +66,7 @@ export default function SectorsServed() {
                         </h2>
                     </div>
                     <div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 
           auto-rows-[150px] md:auto-rows-[180px] lg:auto-rows-[220px]"
                     >
                         {sectorsList.map((area, index) => (
@@ -103,12 +103,12 @@ export default function SectorsServed() {
                         ))}
                     </div>
                 </div>
-                <div className="lg:p-8 md:p-6 p-4 flex item-center text-center">
+                <div className="lg:p-8 md:p-6 p-4 flex item-center justify-center">
                     <Link
                         href="/products"
                         className="rounded-lg max-w-2xl p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
                     >
-                        More Industries
+                        All Industries
                     </Link>
                 </div>
             </div>

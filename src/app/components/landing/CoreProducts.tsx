@@ -36,6 +36,11 @@ export default function CoreProducts() {
         <main className="min-h-screen bg-base-900">
             <div className="max-w-screen-xl mx-auto">
                 <div className="lg:p-8 md:p-6 p-4">
+                    <div className="py-8 flex items-center justify-start">
+                        <h2 className="text-2xl lg:text-4xl md:text-3xl sm:text-3xl font-semibold uppercase text-neutral-950">
+                            Products
+                        </h2>
+                    </div>
                     <div className="flex flex-col space-y-6 gap-8 py-4">
                         {coreProducts.map((product, index) => (
                             <div
@@ -86,7 +91,7 @@ export default function CoreProducts() {
                             href="/products"
                             className="rounded-lg max-w-2xl p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
                         >
-                           All Akeenah Products
+                            All Akeenah Products
                         </Link>
                     </div>
                 </div>
