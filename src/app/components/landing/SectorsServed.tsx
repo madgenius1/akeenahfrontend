@@ -8,7 +8,7 @@ const sectorsList = [
         title: "Mining",
         sectorId: "mining-sector",
         description:
-            "We supply and procure high-quality parts and components essential for the mining industry. Our products, including heavy machinery parts, filtration systems, and electrical components, are designed for durability and performance in harsh environments, ensuring your operations run smoothly.",
+            "We supply and procure high-quality parts and components essential for the mining industry. Our products, including heavy machinery parts, filtration systems, and electrical components, are designed for durability and performance in harsh environments.",
         image: "/sectors/mining.webp",
         size: "large",
     },
@@ -16,7 +16,7 @@ const sectorsList = [
         title: "Oil and Gas",
         sectorId: "oil-and-gas-sector",
         description:
-            "Specializing in the oil and gas industry, we provide critical equipment and components for exploration, drilling, and refining. Our inventory includes specialized valves, pumps, seals, and pipeline components that meet stringent safety and quality standards.",
+            "We provide critical equipment and components for exploration, drilling, and refining. Our inventory includes specialized valves, pumps, seals, and pipeline components that meet stringent safety and quality standards.",
         image: "/sectors/offshoredrill.jpg",
         size: "small",
     },
@@ -24,7 +24,7 @@ const sectorsList = [
         title: "Construction and Civil Engineering",
         sectorId: "construction-civil-engineering-sector",
         description:
-            "Our company is a trusted supplier for construction and civil engineering projects. We offer a wide range of parts from structural materials to heavy equipment spares and safety gear, helping you complete projects efficiently and on schedule.",
+            "Our construction and civil engineering projects range includes structural materials, heavy equipment spares and safety gear, helping you complete projects efficiently and on schedule.",
         image: "/sectors/construction.jpg",
         size: "small",
     },
@@ -32,7 +32,7 @@ const sectorsList = [
         title: "Vehicle Assembly",
         sectorId: "vehicle-assembly-sector",
         description:
-            "We support the vehicle assembly industry with a steady supply of high-grade automotive components. From engine parts and chassis components to electrical systems and fasteners, our products ensure quality and reliability for your production lines.",
+            "We support the vehicle assembly industry with a steady supply of high-grade automotive components. Our products ensure quality and reliability for your production lines.",
         image: "/sectors/vehicleassembly.webp",
         size: "small",
     },
@@ -40,7 +40,7 @@ const sectorsList = [
         title: "Power Generation",
         sectorId: "power-generation-sector",
         description:
-            "Serving the power generation sector, we provide essential parts for thermal, hydro, and renewable energy plants. Our offerings include turbines, generators, transformers, and specialized maintenance parts to ensure consistent and reliable power supply.",
+            "We provide essential parts for thermal, hydro, and renewable energy plants. These include turbines, generators, transformers, and specialized parts for consistent and reliable power supply.",
         image: "/sectors/powergeneration.webp",
         size: "large",
     },
@@ -48,7 +48,7 @@ const sectorsList = [
         title: "Aviation",
         sectorId: "aviation-sector",
         description:
-            "For the aviation industry, we offer a precise and reliable supply of aircraft parts and ground support equipment. Our products, including engine components, hydraulic systems, and avionics, adhere to strict quality and certification standards for flight safety and operational excellence.",
+            "We offer a precise and reliable supply of aircraft support equipment. Our products adhere to strict quality and certification standards for flight safety and operational excellence.",
         image: "/sectors/aviation.webp",
         size: "small",
     },
