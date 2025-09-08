@@ -103,6 +103,14 @@ export default function SectorsServed() {
                         ))}
                     </div>
                 </div>
+                <div className="lg:p-8 md:p-6 p-4 flex item-center text-center">
+                    <Link
+                        href="/products"
+                        className="rounded-lg max-w-2xl p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
+                    >
+                        More Industries
+                    </Link>
+                </div>
             </div>
         </main>
     )
