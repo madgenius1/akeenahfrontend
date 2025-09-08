@@ -31,7 +31,7 @@ const slides: ISlide[] = [
     },
     {
         id: 1,
-        bgUrl: '/assets/mining.png',
+        bgUrl: '/sectors/mining.webp',
         title: 'Mining Industry',
         subtitle: 'Innovative and reliable solutions for your mining needs.',
         links: [
@@ -41,7 +41,7 @@ const slides: ISlide[] = [
     },
     {
         id: 2,
-        bgUrl: '/assets/vehicleassembly.webp',
+        bgUrl: '/sectors/vehicleassembly.webp',
         title: 'Vehicle Assembly',
         subtitle: 'We supply quality products to the Vehicle Assembly sector.',
         links: [
@@ -51,7 +51,7 @@ const slides: ISlide[] = [
     },
     {
         id: 3,
-        bgUrl: '/assets/powergeneration.webp',
+        bgUrl: '/sectors/powergeneration.webp',
         title: 'Power Generation',
         subtitle: 'Quality assured products for power and electricity generation.',
         links: [
