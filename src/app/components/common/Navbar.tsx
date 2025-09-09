@@ -116,12 +116,12 @@ export default function Navbar() {
                     : '-top-96 opacity-0 invisible'
                     }`}
             >
-                <ul className="flex flex-col p-6 space-y-4 list-none">
+                <ul className="flex flex-col p-6 space-y-4 list-none uppercase">
                     <li><Link href="/products" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Products</Link></li>
                     <li><Link href="/services" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Services</Link></li>
-                    <li><Link href="/sectors" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Sectors</Link></li>
+                    <li><Link href="/industries" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Industries</Link></li>
                     <li><Link href="/resources" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Resources</Link></li>
-                    <li><Link href="/about-us" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>About Us</Link></li>
+                    <li><Link href="/company" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Company</Link></li>
                     <li><Link href="/contact" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Contact Us</Link></li>
                     <li><Link href="/terms" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Terms & Conditions</Link></li>
                 </ul>
