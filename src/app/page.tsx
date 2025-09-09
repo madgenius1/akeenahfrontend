@@ -5,7 +5,7 @@ import SectorsServed from "./components/landing/SectorsServed";
 import CallToAction from "./components/landing/CallToAction";
 import HeroServices from "./components/landing/HeroServices";
 import ValueProposition from "./components/landing/ValueProposition";
-import Validity from "./components/landing/Validity";
+// import Validity from "./components/landing/Validity";
 import Partners from "./components/landing/Partners";
 import Statistics from "./components/landing/Statistics";
 import ContactCTA from "./components/landing/ContactCTA";
@@ -23,7 +23,7 @@ export default function Home() {
       <HeroServices />
       <ValueProposition />
       <Statistics />
-      <Validity />
+      {/* <Validity /> */}
       <Partners />
       <ContactCTA />
     </main>

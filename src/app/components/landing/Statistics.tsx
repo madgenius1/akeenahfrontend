@@ -11,18 +11,9 @@ const stats = [
 
 export default function Statistics() {
     return (
-        <main className="bg-base-900 text-base-content">
-            <div className="lg:p-8 md:p-6 p-4">
+        <main className="bg-base-content text-base-content">
+            <div>
                 <div className="max-w-screen-xl mx-auto p-4">
-                    <h3 className="text-start text-neutral-800 dark:text-neutral-200 font-bold lg:text-4xl text-2xl">
-                        Track Record
-                    </h3>
-                    <p className="lg:text-xl text-sm pt-4 text-neutral-700 font-medium leading-relaxed max-w-3xl">
-                        Our numbers speak for themsleves. <br />
-                        We have track record for deliverying quality products and services.
-                    </p>
-                    <hr className="my-10 border-gray-400" />
-
                     <div className=" py-2 grid grid-cols-1 gap-8 mt-6 text-center lg:my-10 sm:gap-x-8 lg:grid-cols-4 md:grid-cols-2">
                         {stats.map((stat, index) => (
                             <div key={index}>

@@ -49,9 +49,9 @@ export default function Navbar() {
                         <ul className="list-none flex flex-row text-md space-x-4">
                             <li><Link href="/products" className="font-semibold hover:text-red-700 uppercase">Products</Link></li>
                             <li><Link href="/services" className="font-semibold hover:text-red-700 uppercase">Services</Link></li>
-                            <li><Link href="/sectors" className="font-semibold hover:text-red-700 uppercase">Industries</Link></li>
+                            <li><Link href="/industries" className="font-semibold hover:text-red-700 uppercase">Industries</Link></li>
                             <li><Link href="/company" className="font-semibold hover:text-red-700 uppercase">Company</Link></li>
-                            <li><Link href="/contact" className="font-semibold hover:text-red-700 uppercase">Contact Us</Link></li>
+                            <li><Link href="/contact-us" className="font-semibold hover:text-red-700 uppercase">Contact Us</Link></li>
                         </ul>
                     </div>
 
@@ -122,7 +122,7 @@ export default function Navbar() {
                     <li><Link href="/industries" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Industries</Link></li>
                     <li><Link href="/resources" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Resources</Link></li>
                     <li><Link href="/company" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Company</Link></li>
-                    <li><Link href="/contact" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Contact Us</Link></li>
+                    <li><Link href="/contact-us" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Contact Us</Link></li>
                     <li><Link href="/terms" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Terms & Conditions</Link></li>
                 </ul>
             </div>

@@ -1,13 +1,21 @@
 
 
+import PartnershipCard from "../ui/PartnershipCard";
 
 
 export default function Partners() {
     return (
-        <main className="min-h-screen bg-base-200">
+        <main className="min-h-screen bg-base-900 text-base-content">
             <div className="max-w-screen-xl mx-auto">
                 <div className="lg:p-8 md:p-6 p-4">
-                    <h3 className="text-2xl font-semibold text-center text-white">Akeenah Group Partners</h3>
+                    <div className="py-6 flex items-center justify-start">
+                        <h2 className="text-2xl lg:text-4xl md:text-3xl sm:text-3xl font-semibold uppercase text-neutral-950">
+                            Partners
+                        </h2>
+                    </div>
+                    <div className="lg:py-8 py-6">
+                        <PartnershipCard />
+                    </div>
                 </div>
             </div>
         </main>
