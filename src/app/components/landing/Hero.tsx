@@ -26,7 +26,7 @@ const slides: ISlide[] = [
         subtitle: "Africa's Leading Industrial Procurement and Supply Company",
         links: [
             { text: 'Browse Our Products', href: '/products' },
-            { text: 'Get a Quote', href: '/quote' },
+            { text: 'About Us', href: '/company' },
         ],
     },
     {

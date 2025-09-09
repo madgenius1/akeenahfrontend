@@ -33,7 +33,7 @@ const coreProducts = [
 
 export default function CoreProducts() {
     return (
-        <main className="min-h-screen bg-base-900">
+        <main className="min-h-screen bg-base-900 text-base-content">
             <div className="max-w-screen-xl mx-auto">
                 <div className="lg:p-8 md:p-6 p-4">
                     <div className="py-8 flex items-center justify-start">

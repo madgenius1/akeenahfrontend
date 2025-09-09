@@ -7,11 +7,11 @@ import { FaGlobeAfrica } from "react-icons/fa";
 import { useState } from "react";
 
 const countries = [
-    { code: "KE", name: "Kenya", languages: ["English", "Swahili"] },
-    { code: "TZ", name: "Tanzania", languages: ["English", "Swahili"] },
-    { code: "SN", name: "Senegal", languages: ["English", "Français"] },
-    { code: "DR", name: "DR Congo", languages: ["English", "Français"] },
-    { code: "ZM", name: "Zambia", languages: ["English", "Swahili"] },
+    { code: "KE", name: "Kenya", languages: ["English", "|", "Swahili"] },
+    { code: "TZ", name: "Tanzania", languages: ["English", "|", "Swahili"] },
+    { code: "SN", name: "Senegal", languages: ["English", "|", "Français"] },
+    { code: "DR", name: "DR Congo", languages: ["English", "|", "Français"] },
+    { code: "ZM", name: "Zambia", languages: ["English", "|", "Swahili"] },
 ];
 
 export default function Navbar() {
@@ -98,7 +98,7 @@ export default function Navbar() {
                                     <button
                                         key={lang}
                                         onClick={() => handleSelect(country.code)}
-                                        className="hover:text-red-800 text-sm"
+                                        className="hover:text-red-800 text-sm cursor-pointer"
                                     >
                                         {lang}
                                     </button>
@@ -111,7 +111,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             <div
-                className={`absolute left-0 w-full transition-all duration-300 ease-in-out md:hidden bg-neutral-500 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-lg ${isMobileMenuOpen
+                className={`absolute left-0 w-full transition-all duration-400 ease-in-out md:hidden bg-neutral-500 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-lg ${isMobileMenuOpen
                     ? 'top-full opacity-100 visible'
                     : '-top-96 opacity-0 invisible'
                     }`}
