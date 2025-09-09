@@ -17,7 +17,7 @@ export default function CallToAction() {
 
             <div className="relative z-10 w-full max-w-screen-xl mx-auto px-6 md:px-12 lg:px-16 text-white">
                 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
-                    <div className="flex-1 max-w-2xl text-center lg:text-left">
+                    <div className="flex-1 max-w-2xl text-start lg:text-left">
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4">
                             Get full access to Akeenah&apos;s Catalogue
                         </h1>
