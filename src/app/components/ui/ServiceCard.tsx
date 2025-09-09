@@ -1,17 +1,18 @@
 
-
+import Link from "next/link";
 import Image from "next/image";
 
 type ServiceProps = {
     title: string;
     statement: string;
     url: string;
+    link: string;
 }
 
-export default function ServiceCard({ title, statement, url }: ServiceProps) {
+export default function ServiceCard({ title, statement, url, link }: ServiceProps) {
     return (
-        <div className="flex items-center justify-center lg:py-10 md:py-8 py-6">
-            <div className="bg-white border border-neutral-200 shadow-xl rounded-2xl p-6 lg:p-8 max-w-screen-3xl w-full">
+        <Link href={link} className="flex items-center justify-center lg:py-10 md:py-8 py-6">
+            <div className="group bg-white border border-neutral-200 rounded-2xl p-6 lg:p-8 max-w-screen-3xl w-full shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 space-y-6 lg:space-y-0 lg:h-84 md:h-72">
                     {/* Text Content */}
                     <div className="flex flex-col space-y-4 lg:w-1/2">
@@ -23,19 +24,20 @@ export default function ServiceCard({ title, statement, url }: ServiceProps) {
                         </p>
                     </div>
                     {/* Image */}
-                    <div className="flex justify-center lg:w-1/2 py-6">
-                        <div className=" rounded-xl shadow-md lg:h-72 lg:w-96 h-auto">
+                    <div className="relative flex justify-center lg:w-1/2">
+                        <div className="overflow-hidden rounded-xl shadow-md w-full max-w-md">
                             <Image
                                 src={url}
                                 alt={`${title} image`}
                                 width={560}
                                 height={420}
-                                className="rounded-xl object-cover w-full transform group-hover:scale-105 transition-transform duration-500"
+                                className="rounded-xl object-cover w-full aspect-video transform group-hover:scale-105 transition-transform duration-500"
+                                priority={false}
                             />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }

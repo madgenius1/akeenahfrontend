@@ -4,27 +4,32 @@ const services = [
     {
         title: "Tools Sales & Rentals",
         statement: "We are a distributor and representative of quality tools and equipment. All items in our catalog are available for both sale and flexible rental options.",
-        url: "/services/sales-rentals.jpg"
+        url: "/services/toolrentals.webp",
+        link: "/services/salesrentals"
     },
     {
         title: "Training & Certification",
         statement: "We provide and facilitate comprehensive training in a proper and safe environment, delivered by a pool of highly trained and experienced professionals.",
-        url: "/services/training.jpg"
+        url: "/services/training.webp",
+        link: "/services/traincert"
     },
     {
         title: "Repair & Maintenance",
         statement: "Our team of skilled technicians conducts regular maintenance, identifies faults, and performs fast, reliable, and guaranteed repairs to keep your equipment running smoothly.",
-        url: "/services/repair.jpg"
+        url: "/services/toolmaintenance.webp",
+        link: "/services/maintenance"
     },
     {
         title: "Tool Calibration",
         statement: "We offer professional calibration services for all types of equipment. Our in-house equipment is valid, approved, and renewed annually, with each service including a test and calibration certificate.",
-        url: "/services/calibration.jpg"
+        url: "/services/toolcalibration.webp",
+        link: "/services/toolcalibration"
     },
     {
         title: "On-site Installations",
         statement: "We facilitate and perform on-site installations and services in partnership with our trusted OEM (Original Equipment Manufacturer) partners.",
-        url: "/services/installation.jpg"
+        url: "/services/installation.webp",
+        link: "/services/installations"
     },
 ];
 
@@ -46,6 +51,7 @@ export default function HeroServices() {
                                         title={service.title}
                                         statement={service.statement}
                                         url={service.url}
+                                        link={service.link}
                                     />
                                 </div>
                             ))}
