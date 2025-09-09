@@ -1,7 +1,7 @@
 import Hero from "./components/landing/Hero";
 import CoreProducts from "./components/landing/CoreProducts";
 import SectorsServed from "./components/landing/SectorsServed";
-import HeroProducts from "./components/landing/HeroProducts";
+// import HeroProducts from "./components/landing/HeroProducts";
 import CallToAction from "./components/landing/CallToAction";
 import HeroServices from "./components/landing/HeroServices";
 import ValueProposition from "./components/landing/ValueProposition";
@@ -18,13 +18,13 @@ export default function Home() {
       <Hero />
       <CoreProducts />
       <SectorsServed />
-      <HeroProducts />
+      {/* <HeroProducts /> */}
       <CallToAction />
       <HeroServices />
       <ValueProposition />
+      <Statistics />
       <Validity />
       <Partners />
-      <Statistics />
       <ContactCTA />
     </main>
 
