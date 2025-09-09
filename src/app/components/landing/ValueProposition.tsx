@@ -26,7 +26,7 @@ export default function ValueProposition() {
                                 </li>
                             </ul>
                             <p>
-                                We empower businesses to capitalize on the massive economic, energy, and mineral potential within Africa's largest economic blocs.
+                                We empower businesses to capitalize on the massive economic, energy, and mineral potential within Africa&apos;s largest economic blocs.
                             </p>
                             <p className="mt-2">
                                 As a proud member of the <span className="underline">British East Midlands Chamber of Commerce</span> and the <span className="underline">British Chamber of Commerce Association</span>, AKEENAH Group stands for reliability and trusted solutions.
