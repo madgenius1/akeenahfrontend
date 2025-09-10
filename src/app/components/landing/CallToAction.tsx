@@ -29,7 +29,7 @@ export default function CallToAction() {
                     {/* CTA Button */}
                     <div className="flex-shrink-0">
                         <Link
-                            href="/contact"
+                            href="/contact-us"
                             className="rounded-lg px-6 py-3 inline-block bg-neutral-100 hover:bg-neutral-300 text-neutral-900 hover:text-neutral-950 transition-colors duration-200"
                         >
                             Contact Us

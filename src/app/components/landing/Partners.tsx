@@ -5,7 +5,7 @@ import PartnershipCard from "../ui/PartnershipCard";
 
 export default function Partners() {
     return (
-        <main className="min-h-screen bg-base-900 text-base-content">
+        <main className="lg:py-16 md:py-12 py-8 bg-base-900 text-base-content">
             <div className="max-w-screen-xl mx-auto">
                 <div className="lg:p-8 md:p-6 p-4">
                     <div className="py-6 flex items-center justify-start">

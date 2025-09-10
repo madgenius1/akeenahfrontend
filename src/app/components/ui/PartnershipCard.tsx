@@ -11,12 +11,12 @@ const PartnershipCarouselReversed: React.FC<PartnershipCarouselProps> = ({ brand
     const [displayedBrands, setDisplayedBrands] = useState<string[]>([]);
 
     const placeholderBrands = [
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
+        "/products/anest-iwata.png",
+        "/products/britannia-fire-logo.png",
+        "/products/chicagopneumatic.png",
+        "/products/chromagen.png",
+        "/products/desoutter.png",
+        "/products/tensionpro.png",
     ];
 
     useEffect(() => {
@@ -71,12 +71,13 @@ const PartnershipCarousel: React.FC<PartnershipCarouselProps> = ({ brands }) => 
     const [displayedBrands, setDisplayedBrands] = useState<string[]>([]);
 
     const placeholderBrands = [
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
+        "/products/egamaster.png",
+        "/products/enerpac.png",
+        "/products/hellermantyton.png",
+        "/products/hifi-filter.png",
+        "/products/jinko.png",
+        "/products/rolecev.png",
+        "/products/scmsolarcleaning.png",
     ];
 
     useEffect(() => {
@@ -129,20 +130,21 @@ const PartnershipCarousel: React.FC<PartnershipCarouselProps> = ({ brands }) => 
 
 export default function PartnershipCard() {
     const brandLogosReversed = [
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
+        "/products/anest-iwata.png",
+        "/products/britannia-fire-logo.png",
+        "/products/chicagopneumatic.png",
+        "/products/chromagen.png",
+        "/products/desoutter.png",
+        "/products/tensionpro.png",
     ];
     const brandLogos = [
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
-        "/fvlogo.webp",
-        "/batianbanner.svg",
+        "/products/egamaster.png",
+        "/products/enerpac.png",
+        "/products/hellermantyton.png",
+        "/products/hifi-filter.png",
+        "/products/jinko.png",
+        "/products/rolecev.png",
+        "/products/scmsolarcleaning.png",
     ];
 
     return (
