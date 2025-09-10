@@ -78,7 +78,7 @@ export default function CoreProducts() {
                                     </ul>
                                     <Link
                                         href={product.link}
-                                        className="rounded-lg p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
+                                        className="rounded-lg p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 font-semibold hover:text-white transition-colors duration-200 w-fit"
                                     >
                                         Catalogue
                                     </Link>
@@ -89,7 +89,7 @@ export default function CoreProducts() {
                     <div className="py-6 my-6 flex items-center justify-center">
                         <Link
                             href="/products"
-                            className="rounded-lg max-w-2xl p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
+                            className="rounded-lg max-w-2xl p-4 inline-block font-semibold bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
                         >
                             All Akeenah Products
                         </Link>

@@ -7,7 +7,7 @@ export default function ContactCTA() {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                     {/* Text Content */}
                     <div className="flex-1 text-center lg:text-left">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4 text-neutral-50">
                             Ready to take the next step?
                         </h2>
                         <p className="text-sm md:text-base lg:text-lg text-gray-300">
@@ -19,7 +19,7 @@ export default function ContactCTA() {
                     <div className="flex-shrink-0 mt-4 lg:mt-0">
                         <Link
                             href="/contact-us"
-                            className="inline-flex items-center justify-center px-8 py-4 text-base md:text-lg font-semibold rounded-full bg-white text-gray-900 shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
+                            className="inline-flex items-center justify-center px-8 py-4 text-base md:text-lg font-semibold rounded-md bg-white text-gray-900 shadow-lg"
                         >
                             Contact Us Today
                         </Link>

@@ -106,7 +106,7 @@ export default function SectorsServed() {
                 <div className="lg:p-8 md:p-6 p-4 flex item-center justify-center">
                     <Link
                         href="/products"
-                        className="rounded-lg max-w-2xl p-4 inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
+                        className="rounded-lg max-w-2xl p-4 font-semibold inline-block bg-neutral-900 hover:bg-neutral-700 text-neutral-100 hover:text-white transition-colors duration-200 w-fit"
                     >
                         All Industries
                     </Link>
