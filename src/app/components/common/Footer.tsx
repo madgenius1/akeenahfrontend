@@ -70,17 +70,18 @@ export default function Footer() {
                         <div>
                             <h3 className="text-neutral-950 font-bold text-lg mb-4 uppercase">Quick Links</h3>
                             <ul className="space-y-3">
+                                <li><Link href="/industries" className="text-neutral-800 hover:text-red-700">Industries</Link></li>
                                 <li><Link href="/resources" className="text-neutral-800 hover:text-red-700">Resources</Link></li>
-                                <li><Link href="/blog" className="text-neutral-800 hover:text-red-700">Blog</Link></li>
-                                <li><Link href="/careers" className="text-neutral-800 hover:text-red-700">Careers</Link></li>
+                                <li><Link href="/faqs" className="text-neutral-800 hover:text-red-700">FAQs</Link></li>
+                                {/* <li><Link href="/careers" className="text-neutral-800 hover:text-red-700">Careers</Link></li> */}
                             </ul>
                         </div>
                         <div>
                             <h3 className="text-neutral-950 font-bold text-lg mb-4 uppercase">Support</h3>
                             <ul className="space-y-3">
-                                <li><Link href="/faqs" className="text-neutral-800 hover:text-red-700">FAQs</Link></li>
-                                <li><Link href="/contact" className="text-neutral-800 hover:text-red-700">Contact Us</Link></li>
+                                <li><Link href="/contact-us" className="text-neutral-800 hover:text-red-700">Contact Us</Link></li>
                                 <li><Link href="/privacy" className="text-neutral-800 hover:text-red-700">Privacy Policy</Link></li>
+                                <li><Link href="/terms" className="text-neutral-800 hover:text-red-700">Terms</Link></li>
                             </ul>
                         </div>
                     </div>
