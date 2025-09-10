@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function CallToAction() {
     return (
-        <div className="lg:px-8 md:px-6 p-4 lg:py-16 md:py-12 relative w-full flex items-center justify-center">
+        <div className="lg:px-8 md:px-6 px-4 lg:py-16 md:py-12 py-8 relative w-full flex items-center justify-center">
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/assets/mining.png"
-                    alt="Smiling woman looking at a laptop"
+                    alt="Mining Background"
                     fill
                     priority
                     className="object-cover"
@@ -15,7 +15,7 @@ export default function CallToAction() {
                 <div className="absolute inset-0 bg-gray-800/70" />
             </div>
 
-            <div className="relative z-10 w-full max-w-screen-xl mx-auto px-6 md:px-12 lg:px-16 text-white">
+            <div className="relative z-10 w-full max-w-screen-xl mx-auto px-6 md:px-12 lg:px-8 text-white">
                 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
                     <div className="flex-1 max-w-2xl text-start lg:text-left">
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4">

@@ -7,31 +7,31 @@ const contactInfo = [
         icon: <IoMailOutline size={20} />,
         label: "sales@akeenahgroup.com",
         href: "mailto:sales@akeenahgroup.com",
-        type: "email",
+        type: "email kenya",
     },
     {
         icon: <IoMailOutline size={20} />,
         label: "info@akeenahgroup.com",
         href: "mailto:info@akeenahgroup.com",
-        type: "email",
+        type: "email global",
     },
     {
         icon: <IoMailOutline size={20} />,
         label: "salesdrc@akeenahgroup.com",
         href: "mailto:salesdrc@akeenahgroup.com",
-        type: "email",
+        type: "email drc",
     },
     {
         icon: <IoCallOutline size={20} />,
         label: "Kenya: +254 734 438438",
         href: "tel:+254734438438",
-        type: "phone",
+        type: "phone kenya",
     },
     {
         icon: <IoCallOutline size={20} />,
         label: "DR Congo: +243 823 179730",
         href: "tel:+243823179730",
-        type: "phone",
+        type: "phone drc",
     },
 ];
 
